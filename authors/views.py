@@ -1,7 +1,8 @@
-from rest_framework.viewsets import ModelViewSet
+from rest_framework.pagination import PageNumberPagination
+from rest_framework.viewsets import mixins
+from rest_framework import viewsets
 from .models import Author
 from .serializers import AuthorModelsSerializer
-from rest_framework.pagination import PageNumberPagination
 
 
 class StandardPagination(PageNumberPagination):
@@ -10,7 +11,7 @@ class StandardPagination(PageNumberPagination):
     max_page_size = 100
 
 
-class AuthorModelViewSet(ModelViewSet):
+class AuthorView(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorModelsSerializer
     pagination_class = StandardPagination
