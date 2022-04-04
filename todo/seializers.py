@@ -11,9 +11,9 @@ class ProjectSerializer(serializers.Serializer):
 
 
 class ToDoSerializer(serializers.Serializer):
-    project = ProjectSerializer()
+    project = ProjectSerializer(many=True)
     text = serializers.CharField(max_length=256)
     create_data = serializers.DateTimeField()
     update_data = serializers.DateTimeField()
-    user = AuthorModelsSerializer()
+    user = AuthorModelsSerializer(many=True)
     is_active = serializers.BooleanField(default=True)

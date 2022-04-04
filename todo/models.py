@@ -9,9 +9,9 @@ class Project(models.Model):
 
 
 class ToDo(models.Model):
-    project = models.OneToOneField(Project, on_delete=models.CASCADE)
+    project = models.ManyToManyField(Project)
     text = models.CharField(max_length=256)
     create_data = models.DateTimeField(auto_now_add=True)
     update_data = models.DateTimeField(auto_now=True)
-    user = models.OneToOneField(Author, on_delete=models.CASCADE)
+    user = models.ManyToManyField(Author)
     is_active = models.BooleanField(default=True)
