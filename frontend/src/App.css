@@ -27,6 +27,7 @@ table {
     width: 550px;
     border: 1px solid;
     margin-left: 15px;
+    margin-bottom: 20px;
 }
 
 td, th {
@@ -37,6 +38,13 @@ td, th {
     margin-left: auto;
     margin-right: auto;
     width: 550px;
+}
+
+.description {
+    text-align: center;
+    margin: 12px;
+    width: 550px;
+    border: 2px solid #0066FF;
 }
 
 .App {

@@ -1,16 +1,16 @@
 from rest_framework import serializers
-from .models import Project, ToDo
-from authors.models import Author
 from authors.serializers import AuthorModelsSerializer
 
 
 class ProjectSerializer(serializers.Serializer):
+    uid = serializers.UUIDField()
     name = serializers.CharField(max_length=32)
     link_GIT = serializers.CharField(max_length=64)
     users = AuthorModelsSerializer(many=True)
 
 
 class ToDoSerializer(serializers.Serializer):
+    uid = serializers.UUIDField()
     project = ProjectSerializer(many=True)
     text = serializers.CharField(max_length=256)
     create_data = serializers.DateTimeField()

@@ -1,4 +1,4 @@
-from rest_framework.serializers import HyperlinkedModelSerializer, HyperlinkedIdentityField
+from rest_framework.serializers import HyperlinkedModelSerializer
 from rest_framework import serializers
 from .models import Author
 from django.urls import reverse
