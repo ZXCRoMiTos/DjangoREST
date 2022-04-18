@@ -1,41 +1,41 @@
 import React from 'react'
 
 
-const AuthorItem = ({author}) => {
+const ToDoItem = ({todo}) => {
     return (
         <tr>
             <td>
-                {author.first_name}
+                {todo.project[0].name}
             </td>
             <td>
-                {author.last_name}
+                {todo.text}
             </td>
             <td>
-                {author.email}
+                {todo.is_active ? <div>В процессе</div> : <div>Закрыто</div>}
             </td>
         </tr>
     )
 }
 
-const AuthorList = ({authors}) => {
+const ToDoList = ({todos}) => {
     return (
         <table>
             <tbody>
                 <tr>
                     <th>
-                        Имя
+                        Проект
                     </th>
                     <th>
-                        Фамилия
+                        Задание
                     </th>
                     <th>
-                        Email
+                        Состояние
                     </th>
                 </tr>
-                {authors.map((author) => <AuthorItem author={author} key={author.uid} />)}
+                {todos.map((todo) => <ToDoItem todo={todo} key={todo.uid} />)}
             </tbody>
         </table>
     )
 }
 
-export default AuthorList;
+export default ToDoList;
