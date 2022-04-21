@@ -3,12 +3,15 @@ import React from 'react'
 
 const Footer = () => {
     return(
-        <footer>
-            <ul>
-                <li>Контакты</li>
-                <li>Все права защищены</li>
-            </ul>
-        </footer>
+        <div>
+            <hr />
+            <footer>
+                <ul>
+                    <li>Контакты</li>
+                    <li>Все права защищены</li>
+                </ul>
+            </footer>
+        </div>
     )
 }
 

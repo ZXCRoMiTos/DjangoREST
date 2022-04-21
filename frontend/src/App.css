@@ -47,6 +47,16 @@ td, th {
     border: 2px solid #0066FF;
 }
 
+.loginForm {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.loginForm input {
+    width: 250px;
+    height: 25px;
+}
+
 .App {
   text-align: center;
 }

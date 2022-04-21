@@ -15,6 +15,9 @@ const HeaderMenu = () => {
                 <li>
                     <Link to='/todos'>Задания</Link>
                 </li>
+                <li>
+                    <Link to='/login'>Login</Link>
+                </li>
             </ul>
         </header>
     )
