@@ -1,0 +1,79 @@
+[
+    {
+        "uid": "88b2a262-efd0-428d-9beb-3c9dcb1e135c",
+        "username": "user123",
+        "first_name": "Valeriya",
+        "last_name": "Smith",
+        "email": "valeriyasmith@gmail.com"
+    },
+    {
+        "uid": "d57ffde6-8847-4e0f-b053-d602302eb9ff",
+        "username": "tawer",
+        "first_name": "Андрей",
+        "last_name": "Кузьмин",
+        "email": "andreykuzmin@gmail.com"
+    },
+    {
+        "uid": "74f27393-2359-43e3-86ad-7221f5af6adf",
+        "username": "luchiy",
+        "first_name": "Владимир",
+        "last_name": "Поздняков",
+        "email": "vladimirpozdnyakov@gmail.com"
+    },
+    {
+        "uid": "53103dbe-9bc6-4d4c-b4a9-ff79b0d2adc6",
+        "username": "user1",
+        "first_name": "Mike",
+        "last_name": "Armstrong",
+        "email": "mikearmstrong@gmail.com"
+    },
+    {
+        "uid": "d2ebb175-dddf-4703-bb50-678ad7baf4b9",
+        "username": "userok",
+        "first_name": "Evgeniy",
+        "last_name": "Kolobkov",
+        "email": "evgeniykolobkov@gmail.com"
+    },
+    {
+        "uid": "f902c94d-a5a7-488c-a3a0-9425709a476d",
+        "username": "qwerty",
+        "first_name": "Nina",
+        "last_name": "Izmailova",
+        "email": "ninaizmailova@gmail.com"
+    },
+    {
+        "uid": "21a1ffa1-fa15-42b5-a4cf-9a54ae42d71d",
+        "username": "qwerty123",
+        "first_name": "Emir",
+        "last_name": "West",
+        "email": "emirwest@gmail.com"
+    },
+    {
+        "uid": "aabedb6f-d33b-4a0d-a023-2d52bd7041af",
+        "username": "popov123",
+        "first_name": "Vasya",
+        "last_name": "Popov",
+        "email": "vasyapopov@gmail.com"
+    },
+    {
+        "uid": "e647a529-d6af-4e5a-9512-e52198c3aa8e",
+        "username": "cringe",
+        "first_name": "Lili",
+        "last_name": "Potter",
+        "email": "lilipotter@gmail.com"
+    },
+    {
+        "uid": "e307e672-9fbc-4da6-9d5f-5870e6fae64a",
+        "username": "tor123",
+        "first_name": "Odin",
+        "last_name": "Anderson",
+        "email": "odinanderson@gmail.com"
+    },
+    {
+        "uid": "18377463-4f83-4e69-b463-8ba588e5758d",
+        "username": "batman",
+        "first_name": "Robert",
+        "last_name": "Pattinson",
+        "email": "robertpattison@gmail.com"
+    }
+]

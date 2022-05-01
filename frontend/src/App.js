@@ -65,9 +65,10 @@ class App extends React.Component {
 
     load_data() {
         const headers = this.get_headers()
-        axios.get('http://127.0.0.1:8000/api/authors/', {headers})
+        axios.get('http://127.0.0.1:8000/api/authors/0.1', {headers})
             .then(response => {
                 const authors = response.data.results
+                console.log(response)
                     this.setState({'authors': authors})
             }).catch(error => console.log(error))
 
