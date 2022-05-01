@@ -1,10 +1,14 @@
 from rest_framework.serializers import HyperlinkedModelSerializer
-from rest_framework import serializers
 from .models import Author
-from django.urls import reverse
 
 
 class AuthorModelsSerializer(HyperlinkedModelSerializer):
     class Meta:
         model = Author
-        fields = ('uid', 'username', 'first_name', 'last_name', 'email', 'url')
+        fields = ('uid', 'username', 'first_name', 'last_name', 'email')
+
+
+class ExtendedAuthorModelsSerializer(HyperlinkedModelSerializer):
+    class Meta:
+        model = Author
+        fields = ('uid', 'username', 'first_name', 'last_name', 'email', 'is_superuser', 'is_stuff')
