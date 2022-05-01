@@ -2,7 +2,7 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.viewsets import mixins
 from rest_framework import viewsets
 from .models import Author
-from .serializers import AuthorModelsSerializer
+from .serializers import AuthorModelsSerializer, ExtendedAuthorModelsSerializer
 
 
 class StandardPagination(PageNumberPagination):
@@ -15,3 +15,8 @@ class AuthorView(mixins.ListModelMixin, mixins.RetrieveModelMixin, mixins.Update
     queryset = Author.objects.all()
     serializer_class = AuthorModelsSerializer
     pagination_class = StandardPagination
+
+    def get_serializer_class(self):
+        if self.request.version == '0.2':
+            return ExtendedAuthorModelsSerializer
+        return AuthorModelsSerializer
