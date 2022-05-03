@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path, include, re_path
+from graphene_django.views import GraphQLView
 from rest_framework import permissions
 from rest_framework.routers import DefaultRouter
 from authors.views import AuthorView
@@ -34,6 +35,7 @@ urlpatterns = [
     path('api-token-auth/', views.obtain_auth_token),
     path('api/authors/0.1', include('authors.urls', namespace='0.1')),
     path('api/authors/0.2', include('authors.urls', namespace='0.2')),
+    path("graphql/", GraphQLView.as_view(graphiql=True)),
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
     schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0),
